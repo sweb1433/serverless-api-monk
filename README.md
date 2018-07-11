@@ -2,7 +2,7 @@
 
 [![N|Solid](https://image.flaticon.com/icons/svg/42/42088.svg)](https://github.com)
 
-# CRUD api using nodejs, serverless, lambda functions and mongo cluster as Database.
+# CRUD api using nodejs, serverless,monk, lambda functions and mongo cluster as Database.
 
  ###  -Step 1. Creating a directory
     
@@ -35,7 +35,7 @@
 ### Step 5. deploy on AWS
 
     -run : sls deploy
-  - note: uncomment 'Note.create(event.body)' and comment 'Note.create(JSON.parse(event.body))' in 'handler.js' file when deploying on serverless.
+  - note: uncomment 'api.insert(event.body)' and comment 'api.insert(JSON.parse(event.body))' in 'handler.js' file when deploying on serverless.
 
 ### Step 6. To remove functions
     -run : sls remove sreverless-api
